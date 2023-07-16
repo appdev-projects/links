@@ -1,1 +1,125 @@
-My link in bio
+<html>
+  <head>
+    <!-- where we tell the browser how to process the document: -->
+        <!-- what title to put in the browser tab -->
+        <!-- what style sheets to load -->
+        <!-- what language to use -->
+          <!-- we will always use a character set called UTF-8 -->
+          <!-- UTF-8 allows for all languages as well as things like emoji -->
+  </head>
+
+<body>
+  <div class="banner">
+    <img src="/thumbnails/me-profile.png" alt="Raghu Betina headshot" class="banner-image">
+  </div>
+
+  <div class="name">
+    Michael Sanchez
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/MikeSanDev" target="_blank">
+      GitHub
+    </a>
+
+    <a href="www.linkedin.com/in/michael-sanchez-dev" target="_blank">
+      LinkedIn
+    </a>
+
+    <a href="https://www.instagram.com/_.kuya.mike._/" target="_blank">
+      Instagram
+    </a>
+
+    <a href="https://dev.to/mikesandev" target="_blank">
+      Dev.to
+    </a>
+  </div>
+
+  <div class="link">
+    <img
+      src="">
+
+    <a target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas
+      — Paul Graham</a>
+  </div>
+
+  <div class="link">
+    <img src="/thumbnails/typography.jpg">
+
+    <a target="_blank"
+      href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes — Matthew
+      Butterick</a>
+  </div>
+
+  <div class="link">
+    <img
+      src="">
+
+    <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
+      Life-Saving Checklist — The New Yorker</a>
+  </div>
+
+  <!-- Etc, for as many links as you want -->
+</body>
+</html>
+
+
+<style>
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #004643;
+    display: flex;
+  justify-content: center;
+    flex-direction: column;
+  }
+
+  .banner-image {
+    width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 128px;
+  }
+
+  .name {
+  color: #fffffe;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.social-icons a {
+  color: #fffffe;
+  text-decoration: none;
+}
+
+.link {
+  background-color: #f9bc60;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.link a {
+  color: #001e1d;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+</style>
