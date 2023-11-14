@@ -3,6 +3,9 @@
   <head>
     <title>Michael Sun Links</title>
     <style>
+      * {
+        border: thin red solid;
+      }
       body {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -11,56 +14,89 @@
         width: 128px;
         height: 128px;
         object-fit: cover;
+        border-radius: 128px;
+        justify-content: center;
       }
       .icons {
         width: 48px;
         height: 48px;
-        border-radius: 48px;
         object-fit: cover;
+        border-radius: 48px;
+        justify-content: center
+        ;
+
       }
       body {
         background-color: #16161a;
       }
       .name {
         color:#fffffe;
+        justify-content: center;
       }
-      .icons {
-        background-color: #7f5af0;
-      }
+
       .link {
         color: #fffffe;
         text-decoration: none;
+        align-items: center;
       }
-    </style>
+
+      .items {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 810px;
+      }
+
+      .link a {
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      </style>
   </head>
   <body>
-    <p>My link in bio</p>
+    
+    <div class="items">
+      <div class="banner">
+        <img src="/banner.jpg" alt="banner" class="banner-image">
+      </div>
+      
+      <div class="name">
+        Michael Sun
+      </div>
+      
+      <div class="link">
+        <img class ="icons" src="icons/insta.png" alt="Instagram">
+        <a class="link" href="https://www.instagram.com/michaelsun13600/" target="_blank">Instagram</a>
+        </div>  
 
-    <div class="name">
-      Michael Sun
+        <div class="link">
+          <img class ="icons" src="icons/tiktok.jpeg" alt="TikTok">
+          <a class="link" href="https://www.tiktok.com/@michael.the.sun" target="_blank">TikTok</a>
+        </div>
+
+        <div class="link">
+          <img class ="icons" src="icons/github.png" alt="Github">
+          <a class="link" href="https://github.com/mtsun05/" target="_blank">Github</a>
+        </div>
+
+        <div class="link">
+          <img class ="icons" src="icons/linkedin.png" alt="LinkedIn">
+          <a class="link" href="https://www.linkedin.com/in/michael-sun-b69b20242/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="link">
+          <img class ="icons" src="icons/spotify.png" alt="Spotify">
+          <a class="link" href="https://open.spotify.com/user/y9snxfcrph0wvujo78rz52a3w?si=15701199dae247ad" target="_blank">Spotify</a>
+        </div>
+
+        <div class="link">
+          <img class ="icons" src="icons/doc.jpeg" alt="Resume">
+          <a class="link" href="https://docs.google.com/document/d/1wIIkzVN9Fu8_a2MM9MLsOi3CFpxhNQB7BPHFXuv4cxQ/edit?usp=sharing" target="_blank">Resume</a>
+        </div>
+      </div>
     </div>
+      
+    </body>
 
-    <div class="banner">
-      <img src="/banner.jpg" alt="banner" class="banner-image">
-    </div>
-
-    <div class="link">
-      <a href="https://www.instagram.com/michaelsun13600/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@michael.the.sun" target="_blank">TikTok</a>
-      <a href="https://github.com/mtsun05/" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/in/michael-sun-b69b20242/" target="_blank">LinkedIn</a>
-      <a href="https://open.spotify.com/user/y9snxfcrph0wvujo78rz52a3w?si=15701199dae247ad" target="_blank">Spotify</a>
-      <a href="https://docs.google.com/document/d/1wIIkzVN9Fu8_a2MM9MLsOi3CFpxhNQB7BPHFXuv4cxQ/edit?usp=sharing" target="_blank">Resume</a>
-    </div>
-
-    <div class="icons">
-      <img src="/insta.png" alt="Instagram">
-      <img src="/github.png" alt="Github">
-      <img src="/doc.jpeg" alt="Resume">
-      <img src="/linkedin.png" alt="LinkedIn">
-      <img src="/spotify.png" alt="Spotify">
-      <img src="/tiktok.jpeg" alt="TikTok">
-    </div>
-
-  </body>
 </html>
