@@ -3,68 +3,78 @@
   <head>
     <title>Michael Sun Links</title>
     <style>
-      * {
-        border: thin red solid;
-      }
       body {
         padding-top: 40px;
         padding-bottom: 40px;
       }
-      .banner-image {
-        width: 128px;
-        height: 128px;
-        object-fit: cover;
-        border-radius: 128px;
+      .banner {
+        display: flex;
         justify-content: center;
       }
+      .banner-image {
+        width: 145px;
+        height: 145px;
+        object-fit: cover;
+        border-radius: 145px;
+      }
       .icons {
+        display: flex;
         width: 48px;
         height: 48px;
         object-fit: cover;
         border-radius: 48px;
-        justify-content: center
-        ;
+        justify-content: space-between;
 
       }
       body {
-        background-color: #16161a;
+        background-color: #232946;
+        display: flex;
+        justify-content: center;
       }
       .name {
+        display: flex;
         color:#fffffe;
-        justify-content: center;
+        justify-content: space-around;
+        font-size: 30pt;
       }
 
       .link {
         color: #fffffe;
+        background-color: #7f5af0;
+        border-radius: 20px;
         text-decoration: none;
         align-items: center;
+        display: flex;
+        padding: 5px;
       }
 
       .items {
         display:flex;
         flex-direction: column;
         gap: 30px;
-        max-width: 810px;
+        max-width: 610px;
+        flex-grow: 1;
       }
 
       .link a {
+        justify-content: center;
         flex-grow: 1;
-        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
       }
-
       </style>
   </head>
+
   <body>
-    
     <div class="items">
       <div class="banner">
-        <img src="/banner.jpg" alt="banner" class="banner-image">
+        <img src="root/PFP.jpg" alt="banner" class="banner-image">
       </div>
       
       <div class="name">
         Michael Sun
       </div>
-      
+        
       <div class="link">
         <img class ="icons" src="icons/insta.png" alt="Instagram">
         <a class="link" href="https://www.instagram.com/michaelsun13600/" target="_blank">Instagram</a>
