@@ -11,15 +11,18 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        background-image: radial-gradient(rgb(132, 85, 145), rgb(6, 98, 141), rgb(44, 52, 121));
-        background-size: 200px 200px;
+        background-image: linear-gradient(black, rgb(108, 26, 131), rgb(13, 19, 75));
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 25%;
+        background-color: transparent;
       }
       
       a {
         display: flex;
         align-content: space-around;
-        color: rgb(130, 216, 152);
+        color: rgb(216, 130, 212);
         text-decoration: none;
         margin-left: 15px;
         font-size: 22px;
@@ -35,13 +38,6 @@
         margin-top: 15px;
       }
 
-      .explore {
-        color: rgb(130, 216, 152);
-        margin-top: 10px;
-        letter-spacing: 2.5px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-
       h3 {
         font-size: 35px;
       }
@@ -53,22 +49,20 @@
       .pic > img {
         border-radius: 50px;
         margin-top: 20px;
-        border: 4px solid rgb(130, 216, 152);     
-       }
-
-    
+        border: 4px solid rgb(71, 1, 88);     
+        box-shadow: 0px 0px 10px 5px rgb(71, 1, 88);
+      }
 
        /* special text */
       .name {
-        font-size: 40px;
+        font-size: 50px;
         padding: 10px;
         align-self: center;
-        text-shadow: -30px -30px 0 rgb(0, 0, 0, .2), 30px -30px 0 rgb(72, 255, 0, .1), -35px 35px 0 rgb(255, 255, 0, .1), 35px 35px 0 rgb(0, 0, 0, .2);
       }
 
       .fa-brands {
         font-size: 40px;
-        color: rgb(130, 216, 152);
+        color: rgb(176, 39, 255);
         padding: 10px;
       }
       
@@ -87,18 +81,34 @@
         -moz-text-fill-color: transparent;
       }
 
+      .nova-flat-regular {
+        font-family: "Nova Flat", serif;
+        font-weight: 600;
+        font-style: normal;
+        background-image: radial-gradient(rgb(245, 146, 230), rgb(97, 169, 247));
+        background-size: 100%;
+        background-color: whitesmoke;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+      }
+
       /* Purple box white border */
       .everfluorescent {
         background-image: radial-gradient(rgb(254, 0, 254), rgb(159, 31, 218), transparent);
         display:flex;
         flex-direction: column;
         padding: 25px;
-        border: 3px solid rgb(130, 216, 152);
+        border: 5px solid rgb(234, 0, 255);
         border-radius: 50px;
         margin-top: 15px;
+        box-shadow: 0px 0px 10px 3px rgb(37, 0, 61);
+        box-shadow: inset 10px 10px 10px 3px rgb(37, 0, 61);
       }
 
-      /* children of everfluorescent */
+      /* LINKS */
       .link {
         display: flex;
         flex-direction: row;
@@ -108,24 +118,12 @@
         padding: 15px;
         margin: 10px;
         border-radius: 50px;
-        box-shadow: 0px 0px 3px 3px rgb(130, 216, 152);
+        box-shadow: 0px 0px 7px 5px rgb(77, 0, 201);
       }
 
       .link:hover {
-        box-shadow: 0px 0px 10px 10px rgb(72, 255, 0);
-      }
-
-      .link2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 15px;
-        margin: 10px;
-        border-radius: 50px;
-        box-shadow: 0px 0px 3px 3px rgb(223, 126, 234);
-        align-self: center;
-        background-color: rgb(62, 0, 70);
-        color: rgb(130, 216, 152);
+        box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);
+        box-shadow: inset 0px 0px 10px 10px rgb(255, 255, 255);
       }
 
       .image {
@@ -137,20 +135,20 @@
     
     </style>
     <script src="https://kit.fontawesome.com/b1dde35a0d.js" crossorigin="anonymous"></script>
-    <title>Anna Villarreal Network</title>
+    <title>Anna Villarreal Links</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
     <div class="pic">
-      <img src="./annav.jpg" alt="anna's face" height="200px"/>
+      <img src="./thumbnails/anna.jpg" alt="anna's face" height="200px"/>
     </div>
 
     <div>
-      <p class="name dosis">Anna Villarreal</p>
+      <p class="name nova-flat-regular">Anna Villarreal</p>
     </div>
 
     <div>
@@ -162,37 +160,30 @@
       </div>
     </div>
 
-   
-
     <div class="everfluorescent">
 
-      <div class="link2">
-        <h3 class="dosis">Ever Fluorescent Links</h3>
-        <p class="explore">Explore my small art business!</p>
-      </div>
-
       <div class="link">
-        <a class="biz" href="https://www.ever-fluorescent.com/" target="_blank">
+        <a class="biz" href="https://calm-headland-09156-e5bc661a5262.herokuapp.com/ target="_blank">
           <img src="/thumbnails/lightbulb copy.png" class="image"/>
-          <p>Ever Fluorescent Website</p></a>
+          <p class="nova-flat-regular">Portfolio Website</p></a>
       </div>
 
       <div class="link">
         <a class="biz" href="https://www.etsy.com/shop/EverFluorescent" target="_blank">
           <img src="/thumbnails/lightbulb.png" class="image"/>
-          <p>Ever Fluorescent Etsy</p></a>
+          <p class="nova-flat-regular">Etsy Shop</p></a>
       </div>
 
       <div class="link">
         <a class="biz" href="https://www.instagram.com/everfluorescentofficial/" target="_blank">
         <img src="/thumbnails/livepainting.jpg" class="image"/>
-        <p>Instagram</p></a>
+        <p class="nova-flat-regular">Instagram</p></a>
       </div>
 
       <div class="link">
-        <a class="biz" href="https://www.tiktok.com/@everfluorescent" target="_blank">
-        <img src="/thumbnails/akira-01.jpg" class="image" />
-        <p>Tiktok</p></a>
+        <a class="biz" href="https://www.linkedin.com/in/anna-villarreal-38254b258/" target="_blank">
+        <img src="/thumbnails/anna.jpg" class="image" />
+        <p class="nova-flat-regular">LinkedIn</p></a>
       </div>
       
     </div>
